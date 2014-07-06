@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@color/feed_gray"
+	     >
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	        <ImageView
+	        android:id="@+id/picture"
+	        android:layout_width="301dp"
+	        android:layout_height="301dp"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/square_postcontent" />
+	    </RelativeLayout>
+	    
+		<RelativeLayout
+	        android:id="@+id/postinterface"
+	        android:layout_height="67dp"
+	        android:layout_width="301dp"
+	        android:background="@drawable/post_infeed_bg"
+	        >
+		<LinearLayout
+		    android:id="@+id/votebuttons"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:orientation="vertical"
+		    android:padding="3dp" >
+
+			<ImageButton
+			    android:id="@+id/add_to_calendar"
+			    android:layout_width="48dp"
+			    android:layout_height="44dp"
+			    android:background="@color/transparent"
+			    android:scaleType="centerInside"
+			    android:src="@drawable/attendevent" />
+
+			<TextView
+			    android:id="@+id/voteCount"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:paddingLeft="10dp"
+			    android:text="300" />
+
+		</LinearLayout>
+		
+	    <TextView
+	        android:id="@+id/caption"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/votebuttons"
+	        android:layout_toRightOf="@+id/votebuttons"
+	        android:paddingLeft="10dp"
+	        android:paddingTop="3dp"
+	        android:textSize="16sp"
+	        android:text="Wow! Look at that great art! Picasso baby!" />
+	    
+		<TextView
+	        android:id="@+id/distance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/votebuttons"
+	        android:layout_toRightOf="@+id/votebuttons"
+	        android:paddingLeft="10dp"
+	        android:paddingBottom="3dp"
+	        android:text=".5mi"
+	        android:textColor="@color/event_pre_text" />
+
+		<Button
+		    android:id="@+id/more_options"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/caption"
+		    android:background="@color/transparent"
+		    android:text="..."
+		    android:textSize="15sp" />
+
+		<TextView
+		    android:id="@+id/timestamp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@+id/distance"
+		    android:layout_alignBottom="@+id/distance"
+		    android:layout_toLeftOf="@+id/more_options"
+		    android:paddingLeft="10dp"
+		    android:paddingTop="3dp"
+		    android:paddingBottom="3dp"
+		    android:text="5h ago"
+		    android:textColor="@color/event_pre_text" />
+		</RelativeLayout>
+</LinearLayout>

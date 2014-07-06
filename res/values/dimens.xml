@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="qv_button_padding">8dp</dimen>
+    <dimen name="mylocationmarker_dimens">18dp</dimen>
+    <dimen name="eventmarker_dimens">18dp</dimen>
+
+</resources>

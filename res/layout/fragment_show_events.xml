@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/action_bar"
+        >
+
+    <ImageButton
+        android:id="@+id/toCreateEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/add_event_states" />
+
+    <TextView
+        android:id="@+id/event_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/events"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    </RelativeLayout>
+	<RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:background="@color/feed_gray"
+    	tools:context=".ShowFeed" >
+	<ListView
+	    android:id="@android:id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@android:color/transparent"
+  		android:dividerHeight="13.0sp" />
+
+    <Button
+        android:id="@+id/add_event_to_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="+Event" />
+    
+    <Button
+        android:id="@+id/refresh_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Refresh" />
+
+</RelativeLayout>
+</LinearLayout>

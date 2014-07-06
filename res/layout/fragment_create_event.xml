@@ -1,0 +1,92 @@
+<LinearLayout 
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" 
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    <ImageButton
+        android:id="@+id/toEventFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@color/transparent"
+        android:paddingBottom="4dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/arrohead_green_states" />
+
+    <TextView
+        android:id="@+id/event_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/add_event"
+        android:textColor="@color/action_bar_button_clickable"
+        android:textSize="30sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+	<LinearLayout
+	    android:id="@+id/map_interface"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:background="@color/white"
+		android:visibility="invisible" >
+	<RelativeLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent">
+	    	<ImageButton
+    			android:id="@+id/back_to_create"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:paddingLeft="3dp"
+    			android:layout_alignParentLeft="true"
+    			android:layout_centerVertical="true"
+    			android:src="@drawable/arrohead_left"
+    			android:background="@color/transparent" />
+	    
+	        <EditText
+        		android:id="@+id/event_address_map"
+       			android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:textSize="30sp"
+        		android:layout_toRightOf="@id/back_to_create"
+        		android:hint="@string/eventLocationHint"
+        		android:paddingLeft="8dp"
+   				android:singleLine="true"
+        		android:background="@drawable/create_event_bg"
+        		android:imeOptions="actionDone">
+        		<requestFocus/>
+    		</EditText>
+	</RelativeLayout>
+    <fragment	
+        android:id="@+id/mapwhere"
+ 		android:name="com.google.android.gms.maps.SupportMapFragment"
+  		android:layout_width="match_parent"
+ 		android:layout_height="match_parent" />
+</LinearLayout>
+	<FrameLayout 
+	    android:id="@+id/eventpic_container"
+	    android:layout_height="fill_parent"
+	    android:layout_width="fill_parent"
+	    android:visibility="invisible"></FrameLayout>
+<include 
+    android:id="@+id/interface_create_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    layout="@layout/interface_create_event"
+    android:visibility="visible"/>
+</RelativeLayout>
+</LinearLayout>

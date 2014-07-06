@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_gray"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="301dp"
+            android:layout_height="301dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/protestfinal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/postinterface"
+        android:layout_width="301dp"
+        android:layout_height="67dp"
+        android:background="@drawable/post_infeed_bg" >
+
+        <LinearLayout
+            android:id="@+id/votebuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <ImageButton
+                android:id="@+id/upvote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/arrohead_up" />
+
+            <TextView
+                android:id="@+id/voteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="300" />
+
+            <ImageButton
+                android:id="@+id/downvote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/arrohead_down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/votebuttons"
+            android:layout_toRightOf="@+id/votebuttons"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="Protest&apos;s getting huge here in Manhattan!"
+            android:textColor="@color/camera_bars"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/caption"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:text=".5mi"
+            android:textColor="@color/timestamp_distance" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="5h ago"
+            android:textColor="@color/timestamp_distance" />
+    </RelativeLayout>
+
+</LinearLayout>

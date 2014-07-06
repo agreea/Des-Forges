@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="@string/eventNameHint"
+        android:paddingLeft="3dp"
+        android:inputType="text"
+   		android:singleLine="true"
+        android:background="@drawable/create_event_bg"
+        android:imeOptions="actionDone"
+        >
+        <requestFocus/>
+    </EditText>
+
+   <EditText
+       android:id="@+id/event_details"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/eventDetailsHint"
+       android:inputType="textMultiLine"
+       android:textSize="30sp"
+       android:paddingLeft="3dp"
+       android:imeOptions="actionDone"
+       android:background="@drawable/create_event_bg" />
+      
+   <TextView
+       android:id="@+id/event_location"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/eventLocationHint"
+       android:textSize="30sp"
+       android:paddingLeft="3dp"
+       android:background="@drawable/create_event_bg">
+   </TextView>
+
+   <TextView
+       android:id="@+id/event_date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/eventDateHint"
+       android:paddingLeft="3dp"
+       android:textSize="30sp"
+       android:background="@drawable/create_event_bg" />
+    
+    <TextView
+        android:id="@+id/event_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="@string/eventStartHint"
+        android:paddingLeft="3dp"
+        android:background="@drawable/create_event_bg" />
+    <TextView
+        android:id="@+id/event_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="@string/eventEndHint"
+        android:paddingLeft="3dp"
+        android:background="@drawable/create_event_bg" />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <RelativeLayout
+            android:id="@+id/event_image_interface"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:visibility="invisible">
+        	<ImageView
+           		android:id="@+id/event_image"
+            	android:layout_height="wrap_content" 
+            	android:layout_width="wrap_content"
+            	android:layout_alignParentTop="true"
+        	    android:layout_alignParentLeft="true"
+            	/>
+        	<ImageButton
+        	    android:id="@+id/undo_event_image"
+        	    android:layout_height="wrap_content"
+        	    android:layout_width="wrap_content"
+        	    android:background="@color/transparent"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_alignParentLeft="true"
+        	    android:src="@drawable/undo"/>
+		</RelativeLayout>
+        <LinearLayout
+        	android:id="@+id/choose_event_image_interface" 
+        	android:layout_height="wrap_content"
+        	android:layout_width="match_parent"
+        	android:background="@drawable/create_event_bg">
+        <Button
+            android:id="@+id/take_picture"
+            android:layout_height="wrap_content"
+			android:layout_width="0dip"           
+            android:text="@string/take_picture"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/event_pre_text" />
+        <Button
+            android:id="@+id/choose_existing"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:text="@string/choose_existing"
+            android:layout_weight="1"
+            android:background="@drawable/button_color"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/event_pre_text" />
+    </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_event"
+        android:background="@color/transparent"
+        android:textColor="@color/radar_green" />
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:background="@color/transparent"
+        android:textColor="@color/event_pre_text" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/event_unit_bg" >
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/event_unit_thumbnail" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="DEC 31 11:59PM" />
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_time"
+        android:layout_alignTop="@+id/thumbnail"
+        android:text="Event Title" />
+
+</RelativeLayout>

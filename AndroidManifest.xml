@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.radr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.screen.portrait" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/radarlogo"
+        android:label="Radr"
+        android:theme="@style/LightNoActionBar">
+        <activity
+            android:name="com.example.radr.ChannelManager"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.radr.CamFeedEvent"
+            android:label="@string/title_activity_cam_feed_event"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/SplashScreenBkgd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.radr.PostShower"
+            android:label="@string/title_activity_post_shower" >
+        </activity>
+        <receiver  android:process=":remote" android:name="com.example.radr.backend.network.ServerPoller" />
+    	<meta-data android:name="com.google.android.gms.version" 
+    	    android:value="@integer/google_play_services_version" />
+		<meta-data
+   			android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyAAHNKPKkkBVMxCAq7HA6kDwkUR4nlKh_Y"/>
+    </application>
+
+</manifest>

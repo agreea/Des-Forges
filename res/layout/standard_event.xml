@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <include layout="@layout/my_events_item" android:id="@+id/event_template"/>
+
+    <ImageButton
+        android:id="@+id/more_info"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="22dp"
+        android:background="@color/transparent"
+        android:src="@drawable/arrohead_right" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Radr</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_camera">Capture Content</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_show_feed">ShowFeed</string>
+    <string name="title_activity_caption_image">CaptionImage</string>
+    <string name="title_activity_capture_content">CaptureContent</string>
+    <string name="title_activity_channel_manager">ChannelManager</string>
+    <string name="title_activity_cam_feed_event">Radr</string>
+    <string name="title_activity_image_sizing">ImageSizing</string>
+    <string name="addChannelBarHint">Broadcast</string>
+    <string name="addCaptionHint">What\'s going on?</string>
+    <string name="eventNameHint">title</string>
+    <string name="eventDateHint">date</string>
+    <string name="eventTimeHint">time</string>
+    <string name="eventLocationHint">where</string>
+    <string name="eventStartHint">starts</string>
+    <string name="eventEndHint">ends</string>
+    <string name="eventDetailsHint">details</string>
+    <string name="title_activity_post_shower">PostShower</string>
+    <string name="latitude_longitude"></string>
+    <string name="take_picture">take picture</string>
+    <string name="choose_existing">choose existing</string>
+    <string name="create_event">create</string>
+    <string name="cancel">cancel</string>    
+    <string name="events">events</string>
+    <string name="add_event">create event</string>
+	<string name="maps_api_key">AIzaSyCdfIfH763d0ikRYs2zUyYaVBSPPYq3nlk</string>
+</resources>

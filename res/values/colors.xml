@@ -1,0 +1,29 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+    <color name="live_text">#339900</color>
+    <color name="transparent">#00000000</color>
+    <color name="caption_gray">#8C484848</color>
+    <color name="camera_bars">#C8000000</color>
+    <color name="feed_gray">#D2DBD5</color>
+    <color name="content_bottom_border">#98A09A</color>
+    <color name="downvote_red">#B80000</color>
+    <color name="radar_green">#009966</color>
+    <color name="action_bar_underline">#006A48</color>
+    <color name="action_bar_button_clickable">#338F33</color>
+    <color name="action_bar_button_unclickable">#AABAAA</color>
+    <color name="future_event_timestamp">#0066CC</color>
+    <color name= "channel_bubble_color">#E1E6DD</color>
+    <color name="event_pre_text">#9F9F9F</color>
+    <color name="timestamp_distance">#D2D2D2</color>
+    <color name="focusedbuttontext">#C8C8C8</color>
+    <color name="buttonpress_green">#B4B0FFB5</color>
+    <color name="mylocation_inner">#C82E9AFE</color>
+    <color name="mylocation_border">#0174DF</color>
+    <color name="eventlocation_inner">#81F79F</color>
+    <color name="eventlocation_border">#C858FA58</color>    
+    <!-- For color opacity, take a 6 digit CSS color code 
+    	 and add 2 more digits (a 255-pt gradient) TO THE FRONT.
+    	 http://roselab.jhu.edu/~raj/MISC/hexdectxt.html -->
+</resources>
